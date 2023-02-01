@@ -1,88 +1,167 @@
 <html>
     <head>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
         <style>
-            body { background:white; color: black; font-size: 18px; font-family: 'Montserrat',sans-serif; padding: 30px; margin: 0;}
+            body { margin: 15px; padding: 0; background: white; color: black; font-size: 24px; font-family: sans-serif;}
+            a { color: rgba(0, 0, 0, 0.8); }
+            .container { width: 100%; max-width: 1000px; margin: 0 auto; }
+            .inner { padding: 15px; margin-bottom: 50px; }
+            h1, h2, h3 { margin: 0; padding: 0; margin-bottom: 15px; font-weight: 400;}
+ 
+            h1 { font-size: 60px; }
+            h3 { font-size: 24px }
 
-            .inner { max-width: 1200px; margin: 0 auto; }
+            .inner.leapers { text-align: right; font-size: 18px; margin-bottom: 50px;}
+            .inner.hero { background: black; color:white; padding-bottom: 300px;}
+            .inner.explainer { max-width: 600px;}
 
-            a { color: black; }
+            .inner.projects a { display: block; text-decoration: none }
+            .inner.projects a:hover strong { text-decoration: underline;}
 
             
-            .logo { margin-top: 50px; display: flex; }
-            .logo img { width: 100px; margin-right: 30px; }
-            h1 { margin-bottom: 0; margin-top: 28px; }
-            h1 .super { font-size: 20px; display: inline-block; position: absolute; margin-top: 6px; border-bottom: 3px solid black; }
-            h2.tiny { font-size: 18px; text-transform: uppercase;}
-            
-            .projects { display: grid; grid-template-columns: 50% 50%; gap: 15px }
-            .projects a { min-height: 100px; text-decoration: none; display: block; background: rgb(83, 83, 83); padding: 30px; margin-bottom: 30px;  }
-            .projects a h2 { margin: 0; }
-            .projects a:hover h2 { text-decoration: underline; }
-            .projects img { width: 60px; margin-bottom: 15px; }
-            .footer { margin-top: 100px; font-size: 14px; }
         </style>
+
     </head>
     <body>
+
+    <div class="container">
+        <div class="inner leapers">Are you a freelancer? <a href="https://leapers.co/"><strong>Join Leapers</strong></a></div>
         
+        <style>
+            .inner.logo { margin-top: -90px; }
+            .inner.logo img { width: 90px; }
+        </style>
+        <div class="inner logo">
+            <img src="img/logo.png">
+        </div>
+        
+        <div class="inner hero">
 
-        <div class="inner">
-            <div class="logo">
-                <img src="img/the-independency.png">
-                <h1>the independency c<span class="super">o</span></h1>
-            </div>
-
-            <div>
-                <h2 class="tiny">For Freelancers</h2>
-                <div class="projects">
-                    <a class="" href="https://leapers.co" style="background-color: #D9D698">
-                        <img src="img/logo-leapers.png">
-                        <h2>Leapers</h2>
-                        award winning community - supporting the mental health of freelancers and the self-employed.
-                    </a>
-                    <a class="" href="https://outsideperspective.co" style="background-color: #DBAB96">
-                        <img src="img/logo-outsideperspective.png">
-                        <h2>outside perspective</h2>
-                        community think tank for independent strategists
-                    </a>
-                </div>
-            </div>
-
-            <div style="margin-top: 50px">
-                <h2 class="tiny">For Employers</h2>
-                <div class="projects">
-                    <a class="" href="https://freelancefriendly.business" style="background-color: #e5e5e5">
-                        <img src="img/logo-freelancefriendly.png">
-                        <h2>Freelance Friendly Framework</h2>
-                        sign up to the framework to better support freelancers
-                    </a>
-
-                    <a class="" href="https://chief-freelance-officer.co.uk" style="background-color: #e9e9e9">
-                       
-                        <img src="img/logo-cfro.png">
-                        <h2>Chief Freelance Officer</h2>
-                        support to work more effectively with freelancers
-                    </a>
-                    
-                </div>
-            </div>
-
-            
-            
+            <h1><strong>the independency</strong> helps teams work better with freelancers _</h1>
 
         </div>
+
+        <div class="inner explainer">
+            <p><strong>fluid talent is an essential part of the future growth of your business</strong></p>
+            <p>as organisations move to leaner teams and combine perm staff with external collaborators - designing for effective work with freelancers is critical.</p>
+            <p>better ways of working with freelancers lowers costs, drivers higher quality output, and supports a sustainable future workforce.</p>
+            <p>we help teams and freelancers work better together - from auditing and supporting your current alumni and process, to building your own network and activating your members.</p>
+        </div>
+
+        <div class="inner projects">
+            <h2>some of our recent work _</h2>
+
+            
+                        <div><strong>food</strong> - prototyping a collaborative community</div>
             
             
+            <div><strong>{NDA}</strong> - a strategy bench for scale</div>
+            <div><strong>medialab</strong> - building an operating system for collaboration</div>
+            <div><strong>manual of me</strong> - tools for working better together</div>
+            <div><strong>major players</strong> - mental health for community members</div>
+            <div><strong>film and tv charity</strong> - what works for community support</div>
+            <div><strong>NABS</strong> - working well with freelancers</div>
+            <div><strong>freelance friendly</strong> - policy development</div>
+            <div><strong>beentheredonethat</strong> - signposting to mental health support</div>
+            <div><strong>leapers</strong> - community development for individuals</div>
+
+        </div>
+
+
+        <style>
+            .inner.articles a { display:block; margin-bottom: 40px; text-decoration: none; }
+            .inner.articles a:hover strong { text-decoration: underline;}
+            .inner.articles .image { background-size: cover; margin-right: 50px; display: block; width: 100%; height: 100px; margin-bottom: 15px; background-position: 50% 50%; }
+            .inner.articles .date { font-size: 18px;}
+
+            @media only screen and (min-width: 600px) {
+                .inner.articles a { display: grid; grid-template-columns: 300px auto; }
+                .inner.articles .content { padding-left: 50px; }
+            }
+
             
 
+        </style>
+        <div class="inner articles">
+            <h2>working well with fluid talent _</h2>
+            <p style="margin-bottom: 50px; max-width: 800px;">we share regular thoughts and observations on our methodology and what we've learnt. <a href="article/index.html" style="text-decoration: underline; display:inline">browse all of the articles here</a>.</p>
+
+
+                        <a href="article/freelance-friendly-mash.html">
+                <div class="image" style="background-image:url(https://cdn.cosmicjs.com/12b4a1c0-6fcd-11ed-bac9-7fe1734a16aa-mash.png)"></div>
+                <div class="content">
+                    <div class="date">29 November, 2022</div>
+                    <h3><strong>Mash is Freelance Friendly</strong> - Learning from a freelance first business</h3>
+                </div>
+            </a>
+                        <a href="article/diamond-strategy-for-open-talent.html">
+                <div class="image" style="background-image:url(https://cdn.cosmicjs.com/6f1cc620-6fd4-11ed-bac9-7fe1734a16aa-chuttersnap-sLUOsr4BoQA-unsplash.jpg)"></div>
+                <div class="content">
+                    <div class="date">13 November, 2022</div>
+                    <h3><strong>The Four Sided Strategy for Open Talent</strong> - Balancing all four points creates an effective approach.</h3>
+                </div>
+            </a>
+                        <a href="article/freelancing-isnt-always-by-choice.html">
+                <div class="image" style="background-image:url(https://cdn.cosmicjs.com/a6edea20-570b-11ed-8382-17e794f79682-pexels-pixabay-235554.jpg)"></div>
+                <div class="content">
+                    <div class="date">28 October, 2022</div>
+                    <h3><strong>Freelancing isn&#039;t always by choice</strong> - Why we need to support the entire workforce</h3>
+                </div>
+            </a>
+                        
+            
+            
+            
+        </div>
+
+
+        <style>
+            .inner.services a { display: block; text-decoration: none; }
+            .inner.services a:hover { text-decoration: underline;}
+        </style>
+        <div class="inner services">
+            <h2>what we do _</h2>
+            <div>+ audit</div>
+            <div>+ ambition</div>
+            <div>+ alumni</div>
+            <div>+ preboarding</div>
+            <div>+ process design</div>
+            <div>+ talent triage</div>
+            <div>+ better briefing</div>
+            <div>+ community design</div>
+            <div>+ community engagement</div>
+            <div>+ community activation</div>
+            <div>+ support and signposting</div>
+        </div>
+
+
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    
+<style>
+    .inner.contact a { display: block; }
+</style>
+
+<div class="inner contact">
+    <h2>get started _</h2>
+    <a class="" href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/thinkplaymakemeet/theindependencyco'});return false;">&gt; arrange discovery call</a>
+    <a href="mailto:hello@the.independency.co">&gt; send us a note</a>
+    <a href="/about.html">&gt; about the independency</a>
+</div>
+
+   
+        <style>
+            .inner.footer { font-size: 12px; margin-top: 200px; max-width: 400px; }
+        </style>
         <div class="inner footer">
-            <strong>the independency co.</strong> is a trading name of <a href="https://foxlark.co">foxlark strategy limited</a>
+            <strong>the independency co</strong> is a trading name of foxlark strategy limited, a registered company in england and wales, no. 11158823
         </div>
-            
         
+
+    </div>
+
+    <script defer data-domain="indepdendency.co" src="https://plausible.io/js/script.js"></script>
 
     </body>
-<html>
+</html>
