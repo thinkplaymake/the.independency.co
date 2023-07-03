@@ -1,0 +1,146 @@
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <style>
+            body { margin: 15px; padding: 0; background: white; color: black; font-size: 24px; font-family: sans-serif;}
+            a { color: rgba(0, 0, 0, 0.8); }
+            .container { width: 100%; max-width: 1000px; margin: 0 auto; }
+            .inner { padding: 15px; margin-bottom: 50px; }
+            h1, h2, h3 { margin: 0; padding: 0; margin-bottom: 15px; font-weight: 400;}
+ 
+            h1 { font-size: 60px; }
+            h3 { font-size: 24px }
+
+            .inner.leapers { text-align: right; font-size: 18px; margin-bottom: 50px;}
+            .inner.hero { background: black; color:white; padding-bottom: 300px;}
+            .inner.explainer { max-width: 600px;}
+
+            .inner.projects a { display: block; text-decoration: none }
+            .inner.projects a:hover strong { text-decoration: underline;}
+        </style>
+
+    </head>
+    <body>
+
+    <div class="container">
+        <div class="inner leapers">Are you a freelancer? <a href="https://leapers.co/"><strong>Join Leapers</strong></a></div>
+
+        <div class="inner hero">
+
+            <h1><strong>the independency</strong> helps teams work better with freelancers _</h1>
+
+        </div>
+
+        <div class="inner explainer">
+            <p><strong>fluid talent is an essential part of the future growth of your business</strong></p>
+            <p>as organisations move to leaner teams and combine perm staff with external collaborators - designing for effective work with freelancers is critical.</p>
+            <p>better ways of working with freelancers lowers costs, drivers higher quality output, and supports a sustainable future workforce.</p>
+            <p>we help teams and freelancers work better together - from auditing and supporting your current alumni and process, to building your own network and activating your members.</p>
+        </div>
+
+        <div class="inner projects">
+            <h2>some of our recent work _</h2>
+
+            
+            {% for project in projects %}
+            <a href="project/{{project.slug}}.html">&gt; <strong>{{project.clientname}}</strong> - {{project.projectheadline}}</a>
+            {% endfor %}
+
+            
+            <!--<a href="#">&gt; <strong>{NDA}</strong> - a strategy bench for scale</a>
+            <a href="#">&gt; <strong>medialab</strong> - building an operating system for collaboration</a>
+            <a href="#">&gt; <strong>manual of me</strong> - tools for working better together</a>
+            <a href="#">&gt; <strong>major players</strong> - mental health for community members</a>
+            <a href="#">&gt; <strong>film and tv charity</strong> - what works for community support</a>
+            <a href="#">&gt; <strong>NABS</strong> - working well with freelancers</a>
+            <a href="#">&gt; <strong>freelance friendly</strong> - policy development</a>
+            <a href="#">&gt; <strong>beentheredonethat</strong> - signposting to mental health support</a>
+            <a href="#">&gt; <strong>leapers</strong> - community development for individuals</a>-->
+
+        </div>
+
+
+        <style>
+            .inner.articles a { display:block; margin-bottom: 40px; text-decoration: none; }
+            .inner.articles a:hover strong { text-decoration: underline;}
+            .inner.articles .image { background-size: cover; margin-right: 50px; display: block; width: 100%; height: 100px; margin-bottom: 15px; }
+            .inner.articles .date { font-size: 18px;}
+
+            @media only screen and (min-width: 600px) {
+                .inner.articles a { display: grid; grid-template-columns: 300px auto; }
+                .inner.articles .content { padding-left: 50px; }
+            }
+
+            
+
+        </style>
+        <div class="inner articles">
+            <h2>working well with fluid talent _</h2>
+
+
+            <a href="#">
+                <div class="image" style="background-image:url(img/image.png)"></div>
+                <div class="content">
+                    <div class="date">jan 23, 2023</div>
+                    <h3><strong>the unbundling of work</strong> - from centralise nodes to networked relationships</h3>
+                </div>
+            </a>
+            <a href="#">
+                <div class="image" style="background-image:url(img/image.png)"></div>
+                <div class="content">
+                    <div class="date">jan 23, 2023</div>
+                    <h3><strong>the unbundling of work</strong> - from centralise nodes to networked relationships</h3>
+                </div>
+            </a>
+            
+            
+            
+            
+        </div>
+
+
+        <style>
+            .inner.services a { display: block; text-decoration: none; }
+            .inner.services a:hover { text-decoration: underline;}
+        </style>
+        <div class="inner services">
+            <h2>what we do _</h2>
+            <a href="#">+ audit</a>
+            <a href="#">+ ambition</a>
+            <a href="#">+ alumni</a>
+            <a href="#">+ preboarding</a>
+            <a href="#">+ process design</a>
+            <a href="#">+ talent triage</a>
+            <a href="#">+ better briefing</a>
+            <a href="#">+ community design</a>
+            <a href="#">+ community engagement</a>
+            <a href="#">+ community activation</a>
+            <a href="#">+ support and signposting</a>
+        </div>
+
+
+        <style>
+            .inner.contact a { display: block; text-decoration: none; }
+            .inner.contact a:hover { text-decoration: underline;}
+        </style>
+        <div class="inner contact">
+            <h2>get started _</h2>
+
+            <a href="#">+ arrange a discovery call</a>
+            <a href="#">+ about the independency</a>
+        </div>
+
+
+
+
+        <style>
+            .inner.footer { font-size: 12px; margin-top: 200px; max-width: 400px; }
+        </style>
+        <div class="inner footer">
+            <strong>the independency co</strong> is a trading name of foxlark strategy limited, a registered company in england and wales, no. 11158823
+        </div>
+
+    </div>
+    </body>
+</html>

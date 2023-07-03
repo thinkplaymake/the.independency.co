@@ -1,0 +1,98 @@
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <style>
+            body { margin: 15px; padding: 0; background: white; color: black; font-size: 24px; font-family: sans-serif;}
+            a { color: rgba(0, 0, 0, 0.8); }
+            .container { width: 100%; max-width: 1000px; margin: 0 auto; }
+            .inner { padding: 15px; margin-bottom: 50px; }
+            h1, h2, h3 { margin: 0; padding: 0; margin-bottom: 15px; font-weight: 400;}
+ 
+            h1 { font-size: 60px; }
+            h3 { font-size: 24px }
+
+            .inner.leapers { text-align: right; font-size: 18px; margin-bottom: 50px;}
+            .inner.hero { background: black; color:white; padding-bottom: 300px;}
+            .inner.explainer { max-width: 600px;}
+
+            .inner.projects a { display: block; text-decoration: none }
+            .inner.projects a:hover strong { text-decoration: underline;}
+        </style>
+
+    <title>the independency co. - articles and resources on working better together with freelancers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    </head>
+    <body>
+
+    <div class="container">
+        <div class="inner leapers">Are you a freelancer? <a href="https://leapers.co/"><strong>Join Leapers</strong></a></div>
+        <style>
+            .inner.logo { margin-top: -90px; }
+            .inner.logo img { width: 90px; }
+        </style>
+        <div class="inner logo">
+            <img src="../img/logo.png">
+        </div>
+        <div class="inner masthead">
+            <strong><a href="../index.html">The Independency Co</a></strong><br>
+            helping teams work better together with freelancers
+        </div>
+
+
+        <style>
+            .inner.articles h1 { margin-bottom: 100px }
+            .inner.articles .list a { display:block; margin-bottom: 30px; text-decoration: none; margin-bottom: 70px}
+            .inner.articles .list a:hover .title { text-decoration: underline; }
+            .inner.articles .list .image { display: block; max-width: 700px; height: 150px; background-size: cover; margin-bottom: 15px; }
+            .inner.articles .list .type { font-size: 15px; background:black; color:white; display:inline-block; padding:5px; margin-top: 15px; margin-bottom: 15px; }
+            
+
+            @media (min-width: 700px) {
+                .inner.articles .list a { display:grid; gap: 50px; grid-template-columns: 400px auto; }
+            }
+        </style>
+        <div class="inner articles">
+            <h1>
+                <strong>On Working Well</strong> -
+                our thoughts and methodology towards working better together with freelancers.
+            </h1>
+
+            <div class="list">
+                {% for article in articles %}
+                {% if article.metadata.articletype.key != "about" %}
+                <a href="{{article.slug}}.html">
+                    <div class="image" style="background-image:url({{article.metadata.image.url}})"></div>
+                    <div class="content">
+                        <div class="type">{{article.metadata.articletype.value}}</div>
+                        {% if article.metadata.date_published %}<div class="date">{{article.metadata.date_published| date("j F, Y")}}</div>{% endif %}
+                        <div class="title"><strong>{{article.title}}</strong>{% if article.subtitle %} - {{article.subtitle}}{%endif%}</div>
+                    </div>
+                </a>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+
+
+    
+
+        {% include 'template/_contact.html' %}
+        
+    
+
+
+        <style>
+            .inner.footer { font-size: 12px; margin-top: 200px; max-width: 400px; }
+        </style>
+        <div class="inner footer">
+            <strong>the independency co</strong> is a trading name of foxlark strategy limited, a registered company in england and wales, no. 11158823
+        </div>
+
+    </div>
+
+    <script defer data-domain="indepdendency.co" src="https://plausible.io/js/script.js"></script>
+
+    </body>
+</html>

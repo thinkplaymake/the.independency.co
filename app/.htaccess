@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule ^index.html$ index.php?path=index.html [QSA,L]
+RewriteRule ^about.html$ index.php?path=about.html [QSA,L]
+
+RewriteRule ^articles/index.html$ index.php?path=articles.html [QSA,L]
+RewriteRule ^articles/(.*).html$ index.php?path=article.html&article=$1 [QSA,L]
