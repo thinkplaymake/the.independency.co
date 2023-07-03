@@ -23,7 +23,6 @@ if($article_slug) {
     $page_data['article'] = $article;
 }
 $twig->put("template/" . $path, $page_data);
-
 exit;
 
 

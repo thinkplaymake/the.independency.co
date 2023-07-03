@@ -1,0 +1,6 @@
+https://the.independency.co/index.html
+https://the.independency.co/about.html
+https://the.independency.co/articles/index.html
+{% for article in articles %}
+https://the.independency.co/articles/{{article.slug}}.html
+{% endfor %}
