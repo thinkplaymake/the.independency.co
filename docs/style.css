@@ -49,6 +49,7 @@
             .white a.button { background:black; color: white; }
             .smallprint { font-size: 18px; }
             .sitename { text-transform: uppercase; font-size: 18px; font-weight: 600; margin-bottom: 100px; }
+            .sitename a { text-decoration: none; }
             .sectionlabel { text-transform: uppercase; font-size: 18px; font-weight: 600; margin-bottom: 100px; }
 
 
