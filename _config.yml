@@ -1,0 +1,6 @@
+destination: docs
+
+collections:
+  articles:
+    output: true
+    permalink: /articles/:title/

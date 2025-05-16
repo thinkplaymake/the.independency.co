@@ -1,28 +1,10 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <title>FERRI - Understand your experience, relationships and reputation with freelancers</title>
+---
+layout: base
+title: FERRI - Understand your experience, relationships and reputation with freelancers
+pricing: {"single_full": 2500, "single_discount":"1750", "annual_full": "5000", "annual_discount": "3500"}
+---
 
-
-        <script defer data-domain="independency.co" src="https://plausible.io/js/script.outbound-links.js"></script>
-        <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-
-        <link rel="stylesheet" href="/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-
-    </head>
-    <body>
-
-        <div class="container black">
-            <div class="inner">
-                <div class="sitename"><a href="/">The Independency Co.</a></div>
-            </div>
-        </div>
-        
-        <style>
+<style>
 
     #whatyouget ul { margin-bottom: 50px; }
     #aboutus p { max-width: 600px; }
@@ -115,13 +97,13 @@
                 
                 <p>
                     <strong>ANNUAL REPORTING</strong><br/>
-                    £5000 for 2 reports per year,<br/>
+                    £{{page.pricing.annual_full}} for 2 reports per year,<br/>
                     improvement scores and benchmarks.
                 </p>
                 
                 <p>
                     <strong>SINGLE REPORT</strong><br/>
-                    <span class="strike">£2500</span> £1750 for founder members
+                    <span class="strike">£{{page.pricing.single_full}}</span> £{{page.pricing.single_discount}} for founder members
                 </p>
                 
                 
@@ -213,7 +195,3 @@
 
 
 
-
-        
-    </body>
-</html>

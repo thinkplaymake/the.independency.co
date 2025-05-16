@@ -1,0 +1,64 @@
+            /* CSS Reset */
+            *, *::before, *::after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            html {
+                font-size: 16px;
+                -webkit-text-size-adjust: 100%;
+            }
+
+            body {
+                line-height: 1.5;
+                -webkit-font-smoothing: antialiased;
+            }
+
+            img, picture, video, canvas, svg {
+                display: block;
+                max-width: 100%;
+            }
+
+            input, button, textarea, select {
+                font: inherit;
+            }
+
+            p, h1, h2, h3, h4, h5, h6 {
+                overflow-wrap: break-word;
+            }
+
+            /* Existing styles */
+            body { margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 22px; }
+            div { box-sizing: border-box; }
+            p { margin: 0; margin-bottom: 20px; }
+            .container { width: 100%; padding: 30px; }
+            .container.black { background-color: #000; color: #fff; }
+            .container.beige { background-color: #f1eee3; color: #000; }
+            .container.yellow { background-color: rgb(255, 223, 91); color: #000; }
+            .inner { width: 100%; max-width: 1100px; margin: 0 auto; }
+            
+            h1 { font-family: 'Space Grotesk', sans-serif; font-size: clamp( 32px, 10vw, 126px); font-weight: 600; line-height: 0.9; margin-bottom: 50px; }
+            h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp( 32px, 10vw, 72px); font-weight: 600; line-height: 0.9; margin-top: 50px;margin-bottom: 50px; }
+            h3 { font-family: 'Space Grotesk', sans-serif; font-size: 32px; font-weight: 600; line-height: 0.9; margin-top: 50px; margin-bottom: 30px; }
+            .strike { text-decoration: line-through; font-weight: 100; }
+            
+            a { color: inherit; }
+            a.button { background:black; color: white; padding: 10px 50px; border-radius: 30px; text-decoration: none; font-weight: 600; text-decoration: underline; display: inline-block; margin-bottom: 30px; }
+            .black a.button { background:white; color: black; }
+            .white a.button { background:black; color: white; }
+            .smallprint { font-size: 18px; }
+            .sitename { text-transform: uppercase; font-size: 18px; font-weight: 600; margin-bottom: 100px; }
+            .sitename a { text-decoration: none; }
+            .sectionlabel { text-transform: uppercase; font-size: 18px; font-weight: 600; margin-bottom: 100px; }
+
+
+            @media screen and (min-width: 768px) {
+                .cols5050 { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; }
+                .cols7030 { display: grid; grid-template-columns: auto 600px; gap: 100px; }
+            }
+            
+            
+            .col-left { width: 100%; max-width: 600px; padding-bottom: 50px;  }
+            .col-right { width: 100%; max-width: 600px; margin-left: auto; }
+
