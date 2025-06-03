@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Freelancer Email Hasher</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    textarea, input[type="file"] { width: 100%; margin-bottom: 10px; }
+    button { padding: 10px 15px; margin-top: 10px; }
+    #output { white-space: pre; background: #f7f7f7; padding: 10px; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Freelancer Email Hasher</h1>
+  <p>Paste a list of emails below or upload a CSV file with a single column of email addresses. This tool will hash each email using a fixed seed.</p>
+  <label for="emailInput">Paste Email Addresses (one per line):</label>
+  <textarea id="emailInput" rows="10"></textarea>
+
+  <label for="fileInput">Or upload CSV file:</label>
+  <input type="file" id="fileInput" accept=".csv">
+
+  <button onclick="processEmails()">Generate Hashes</button>
+  <button onclick="downloadFile()">Download Result CSV</button>
+
+  <h2>Hashed Emails:</h2>
+  <div id="emailCount"></div>
+  <div id="output"></div>
+
+  <script>
+    const seed = "theindependencyco_";
+    let hashedResults = [];
+
+    function seededMD5(email) {
+      const clean = seed + email.trim().toLowerCase();
+      return CryptoJS.MD5(clean).toString();
+    }
+
+    function processEmails() {
+      hashedResults = [];
+      const output = document.getElementById('output');
+      const textInput = document.getElementById('emailInput').value.trim();
+      let emails = textInput ? textInput.split('\n') : [];
+
+      const fileInput = document.getElementById('fileInput').files[0];
+      if (fileInput) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          const lines = e.target.result.split(/\r?\n/);
+          emails = emails.concat(lines);
+          renderHashes(emails);
+        };
+        reader.readAsText(fileInput);
+      } else {
+        renderHashes(emails);
+      }
+    }
+
+    function renderHashes(emails) {
+      const output = document.getElementById('output');
+      const countDisplay = document.getElementById('emailCount');
+      output.innerHTML = '';
+      hashedResults = [['Hashed Email']];
+      let validEmailCount = 0;
+      emails.forEach(email => {
+        if (email.trim()) {
+          const hash = seededMD5(email);
+          hashedResults.push([hash]);
+          output.innerHTML += `${hash}\n`;
+          validEmailCount++;
+        }
+      });
+      countDisplay.innerHTML = `<p>Processed ${validEmailCount} email address${validEmailCount !== 1 ? 'es' : ''}</p>`;
+    }
+
+    function downloadFile() {
+      if (hashedResults.length === 0) return alert("No hashes to download.");
+      let csvContent = "data:text/csv;charset=utf-8," + hashedResults.map(e => e.join(",")).join("\n");
+      const encodedUri = encodeURI(csvContent);
+      const link = document.createElement("a");
+      link.setAttribute("href", encodedUri);
+      link.setAttribute("download", "hashed_freelancers.csv");
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+</body>
+</html>
