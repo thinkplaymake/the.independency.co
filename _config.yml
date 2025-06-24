@@ -4,3 +4,5 @@ collections:
   articles:
     output: true
     permalink: /articles/:title/
+
+
