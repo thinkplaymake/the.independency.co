@@ -4,5 +4,8 @@ collections:
   articles:
     output: true
     permalink: /articles/:title/
+  communities:
+    output: true
+    permalink: /communities/:slug/
 
 
