@@ -1,11 +1,11 @@
-destination: docs
 url: "https://the.independency.co"
+baseurl: ""
+destination: docs
 
 collections:
   articles:
     output: true
     permalink: /articles/:title/
   communities:
-    output: false
-
-
+    output: true
+    permalink: /communities/:slug/ 
