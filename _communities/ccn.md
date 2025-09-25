@@ -4,6 +4,7 @@ title: CCN
 description: A community for black creatives and freelancers
 linkurl: https://www.linkedin.com/company/clear-connect-network/about/
 slug: ccn
+founder: true
 ---
 
 # CCN

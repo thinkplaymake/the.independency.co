@@ -4,6 +4,7 @@ title: Elsie
 description: Elsie is the first global community designed for freelancers working in female and sexual healthcare.
 linkurl: https://veryelsie.com
 slug: elsie
+founder: true
 ---
 
 # Elsie

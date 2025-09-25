@@ -4,6 +4,7 @@ title: Outside Perspective
 description: The place for independent strategists.
 linkurl: https://outsideperspective.co
 slug: op
+founder: true
 ---
 
 # Outside Perspective

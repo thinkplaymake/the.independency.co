@@ -4,6 +4,7 @@ title: Freelancing For Good
 description: Freelancing For Good is a supportive Slack community for freelancers who want to use their business to make a positive impact.
 linkurl: https://freelancingforgood.com/community/
 slug: ffg
+founder: true
 ---
 
 # Freelancing For Good

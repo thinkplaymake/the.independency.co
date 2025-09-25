@@ -4,6 +4,7 @@ title: Leapers
 description: A project supporting freelancers with mental health and wellbeing
 linkurl: https://leapers.co
 slug: leapers
+founder: true
 ---
 
 # Leapers

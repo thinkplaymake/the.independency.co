@@ -5,6 +5,8 @@ title: Community Coalition - creating a collective voice for freelancers.
 og_image: https://the.independency.co/img/coalition/og.png
 og_description: Ten of the UK's leading freelance communities, working together to collectively support freelancers.
 og_url: https://the.independency.co/community-coalition
+
+community_size: "20,000"
 ---
 
 <style>
@@ -25,7 +27,7 @@ og_url: https://the.independency.co/community-coalition
 <div class="container black" style="background-image: url('/img/interstellar-bg.png'); background-size: cover; background-position: center;">
     <div class="inner">
         <h1 style="text-align: center;">Collective support for freelancers.</h1>
-        <p style="max-width: 600px; margin: 0 auto; margin-bottom: 100px; text-align: center;">Bringing together the UK's leading freelance communities. 11,000+ freelancers across<br/>{{site.communities.size | number_to_words}} brilliant projects.</p>
+        <p style="max-width: 600px; margin: 0 auto; margin-bottom: 100px; text-align: center;">Bringing together the UK's leading freelance communities. {{page.community_size}}+ freelancers across<br/>{{site.communities.size | number_to_words}} brilliant projects.</p>
 
         
         <div class="responsivecols">
@@ -66,8 +68,8 @@ og_url: https://the.independency.co/community-coalition
 </style>
 <div class="container white">
     <div class="inner">
-        <h3 style="text-align: center; margin-bottom: 50px;">Founder Members</h3>
-       <div class="grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-bottom: 200px;">
+        <h3 style="text-align: center; margin-bottom: 50px;">Coalition Members</h3>
+       <div class="grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin: 0 auto; margin-bottom: 200px; max-width: 900px; ">
             {% for community in site.communities %}
                 <a href="{{ community.linkurl }}" title="{{ community.title }} - {{ community.description }}" class="community-card">
                     <img src="/img/coalition/{{ community.slug }}.png" alt="{{ community.title }}">

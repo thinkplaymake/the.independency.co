@@ -4,6 +4,7 @@ title: Freelancer Magazine
 description: Freelancer Magazine is a quarterly print+digital magazine and membership for marketing, creative and B2B freelancers.
 linkurl: https://freelancermagazine.co.uk
 slug: freelancermagazine
+founder: true
 ---
 
 # Freelancer Magazine

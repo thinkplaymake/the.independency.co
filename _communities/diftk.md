@@ -4,6 +4,7 @@ title: Doing It For The Kids
 description: Community by and for parents who work freelance.
 linkurl: https://www.doingitforthekids.net/
 slug: diftk
+founder: true
 ---
 
 # Doing It For The Kids

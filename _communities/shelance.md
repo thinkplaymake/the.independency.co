@@ -4,6 +4,7 @@ title: Shelance
 description: Female freelance Creative Talent for the Ad/Design Industry.
 linkurl: https://weareshelance.com
 slug: shelance
+founder: true
 ---
 
 # We Are Shelance

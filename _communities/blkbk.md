@@ -4,6 +4,7 @@ title: BLKBK
 description: Community for design freelancers
 linkurl: https://www.blkbk.co
 slug: blkbk
+founder: true
 ---
 
 # BLKBK
