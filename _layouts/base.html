@@ -23,7 +23,14 @@
 
         <div class="container black">
             <div class="inner">
-                <div class="sitename"><a href="/">The Independency Co.</a></div>
+                <div class="sitename">
+                    <a href="/">The Independency Co.</a>
+                
+                    {% if page.toplevelsubnav_url %}
+                        <a href="{{page.toplevelsubnav_url}}" style="font-weight: 100">{{page.toplevelsubnav_text}}</a>
+                    {% endif %}
+
+                </div>
             </div>
         </div>
         

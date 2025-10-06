@@ -1,0 +1,103 @@
+---
+layout: base
+
+og_image: https://the.independency.co/img/coalition/og.png
+og_description: Ten of the UK's leading freelance communities, working together to collectively support freelancers.
+og_url: https://the.independency.co/community-coalition
+
+community_size: "20,000"
+---
+
+<style>
+    .sitename { margin-bottom: 0px; }
+    #whatyouget ul { margin-bottom: 50px; }
+    #aboutus p { max-width: 600px; }
+    h1 { font-size: clamp(2rem, 7vw, 7vw); }
+    h4 { margin-bottom: 20px; }
+
+    .responsivecols { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+    @media (max-width: 768px) {
+        .responsivecols { grid-template-columns: 1fr; }
+    }
+
+
+</style>
+
+<div class="container black" style="background-image: url('/img/interstellar-bg.png'); background-size: cover; background-position: center;">
+    <div class="inner">
+        
+        <h1 style="text-align: center;">{{page.title}}.</h1>
+        <p style="max-width: 600px; margin: 0 auto; margin-bottom: 100px; text-align: center;">
+            {{page.description}}
+        </p>
+
+        <p style="text-align: center;"><a href="{{page.linkurl}}" class="button">Visit {{page.title}}</a></p>
+        
+    </div>
+
+</div>
+
+
+<div class="container">
+    <div class="inner">
+
+        <div class="" style="max-width: 600px;">
+            {{content}}
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+{% include community-coalition-memberlist.html %}
+
+<div style="text-align: center;">
+    <a href="/community-coalition" class="button" style="text-align: center; margin: 0 auto; margin-bottom: 100px;">Back to the Coalition</a>
+</div>
+
+
+
+<div class="container black" id="aboutus">   
+    <div class="inner">
+        <h2>The Independency Co.</h2>
+        <p><strong>Creating confidence in freelancing.</strong></p>
+
+        <p>Our work supports both freelancers and hirers to
+        work better, together.</p>
+        
+        
+        <p>Whether it’s our award winning mental health project
+        Leapers, our free resources on freelancing.support, or
+        our communities like Outside Perspective - we’ve
+        been making freelancing work better for almost ten
+        years.</p>
+
+        <a href="/" class="button">Discover more</a>
+    </div>
+</div>
+
+
+
+<!-- <div class="container white terms">
+    <div class="inner"  style="margin-top: 100px; font-size: 14px;">
+       
+       <div style="max-width: 500px;">
+        <p>Introduction Terms:</p>
+
+        <p>If you introduce a company to The Independency Co, and they sign up for a full report within 12 months, we'll pay you £250, and give them £250 off a full price single report.</p>
+
+        <p>We are only able to pay if:</p>
+        
+        <p>a) you have previously worked with the nominated company<br/>
+            b) you introduce us directly via email, including your contact details, and your client contact details.<br/>
+            c) you introduce us to a geniuine person you know, not an open mailbox, i.e. hello@acme.com<br/>
+            d) if you are the first person to introduce us, and they are not an existing customer of The Independency Co.</p>
+
+        <p>Full terms and conditions available on request.</p>
+    </div>
+    </div>
+</div>
+-->

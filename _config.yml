@@ -6,6 +6,9 @@ collections:
     output: true
     permalink: /articles/:title/
   communities:
-    output: false
+    output: true
+    permalink: /community-coalition/member/:slug/ 
+
+  
 
 
