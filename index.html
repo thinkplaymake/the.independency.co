@@ -163,11 +163,38 @@ title: The Independency Co.
                     
                     He is a member of the Mental Health at Work Leadership Council, and has contributed to a number of government panels on the topic of independent work.
                 </p>
+
+                <a href="mailto:hello@independency.co" class="button">Get in touch</a>
             </div>
             
         </div>
         
     </div>
+</div>
+
+
+
+<style>
+    .substack-items { display: grid; grid-template-columns: repeat(2, 1fr); column-gap: 100px;  }
+    
+</style>
+<div class="container white">
+
+    <div class="inner">
+        <h3>Recently posted on Substack</h3>
+
+        <div class="substack-items">
+            {% for item in site.data.substack_items %}
+            <a href="{{ item.link }}" style="text-decoration: none; margin-bottom: 50px;">
+                <time style="font-size: 12px; text-transform: uppercase;">{{ item.pubDate | date: "%B %d, %Y" }}</time><br/>
+                <strong style="text-decoration: underline;">{{ item.title }}</strong>
+                <p>{{ item.description }}</p>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+
+
 </div>
 
 <div class="container white">

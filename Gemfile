@@ -9,3 +9,4 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "~> 4.4.1"
 gem "jekyll-redirect-from"
+gem "rss"
