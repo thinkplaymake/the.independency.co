@@ -5,6 +5,7 @@ description: Community welcoming those across the media from designers and photo
 linkurl: https://www.facebook.com/groups/No1FreelanceMediaWomen/?locale=en_GB
 slug: no1
 founder: false
+hidden: true
 ---
 
 # No1 Freelance Media Women
