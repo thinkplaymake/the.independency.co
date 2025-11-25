@@ -29,7 +29,7 @@ title: The Independency Co.
         our communities like <a href="https://outsideperspective.co">Outside Perspective</a> - we’ve
         been making freelancing work better for almost ten years.</p>
 
-        <p>Founded by <a href="https://linkedin.com/in/thinkplaymake">Matthew Knight, the Chief Freelance Officer</a>, a vocal advocate for freelancers and improved ways of working with independents.</p>
+        <p>Founded by <a href="/matthew-knight">Matthew Knight, the Chief Freelance Officer</a>, a vocal advocate for freelancers and improved ways of working with independents.</p>
 
         <a href="mailto:hello@independency.co" class="button" style="margin-top: 50px;">Get in touch</a>
     </div>
@@ -182,12 +182,12 @@ title: The Independency Co.
 <div class="container white">
 
     <div class="inner">
-        <h3>Recently posted on Substack</h3>
+        <h3>Notes on independent work</h3>
 
         <div class="substack-items">
-            {% for item in site.data.substack_items %}
-            <a href="{{ item.link }}" style="text-decoration: none; margin-bottom: 50px;">
-                <time style="font-size: 12px; text-transform: uppercase;">{{ item.pubDate | date: "%B %d, %Y" }}</time><br/>
+            {% for item in site.notes reversed %}
+            <a href="{{ item.url }}" style="text-decoration: none; margin-bottom: 50px;">
+                <time style="font-size: 12px; text-transform: uppercase;">{{ item.date_posted | date: "%B %d, %Y" }}</time><br/>
                 <strong style="text-decoration: underline;">{{ item.title }}</strong>
                 <p>{{ item.description }}</p>
             </a>

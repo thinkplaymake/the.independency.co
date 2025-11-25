@@ -8,6 +8,9 @@ collections:
   communities:
     output: true
     permalink: /community-coalition/member/:slug/ 
+  notes:
+    output: true
+    permalink: /notes/:slug/
 
   
 

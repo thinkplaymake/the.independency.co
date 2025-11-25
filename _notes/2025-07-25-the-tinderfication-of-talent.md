@@ -1,0 +1,12 @@
+---
+title: "the tinderfication of talent."
+description: "I use the phrase &#8220;tinderfication of talent&#8221; a fair bit."
+date_posted: 2025-07-25
+original_url: "https://theindependencyco.substack.com/p/the-tinderfication-of-talent"
+source: substack
+layout: note
+toplevelsubnav_url: /notes
+toplevelsubnav_text: Notes
+---
+
+<p>I use the phrase &#8220;tinderfication of talent&#8221; a fair bit. This is what I mean by it.</p><p>The open marketplaces removed friction when looking for freelancers - it was seen a good thing for both sides, easier to find a freelancers, easier for a freelancer to find work.</p><p>However, just as dating apps created a &#8220;there will always be someone better&#8221;, slightly different to the &#8220;optimal stopping problem&#8221;, it created the sense of &#8220;always being someone waiting for work&#8221;.</p><p>And this commoditised working with freelancers. </p><p>If you know there&#8217;s an infinite supply of something, there&#8217;s no scarcity, and therefore no value. </p><p>And in freelancing, this manifests as treating freelancers without respect, because of the assumption there will always be someone who is willing to put up the situation.</p><p>Additionally, there&#8217;s a &#8220;nanosecond decision making&#8221; problem that further makes matters worse, that there&#8217;s a long list of people to chose from, you&#8217;re going to swipe swipe swipe, glance glance glance, and choose quickly - without really considering.</p><p>This means that people are being selected based upon being a) at the top of a deck (algorithm or salience) b) being available c) ticking boxes at a capability level, rather than an experience and chemistry level.</p><p>This makes it harder for those who aren&#8217;t on the top of the deck to get work, and removes any process for stopping and thinking whether they&#8217;re a good fit on other criteria. It&#8217;s &#8220;hot or not&#8221; over &#8220;right or not&#8221;.</p><p>Friction is a good thing. Taking some time to filter through a pool of people, and consider who is right for a role is a good thing. No, we shouldn&#8217;t do it on every job - the point of building a relationship with a trusted pool of freelancers is that you don&#8217;t need to do it every time, you&#8217;re building intelligence on who is good for what.</p><p>But you do need to do it at some point.</p><p>Otherwise you&#8217;ll be on the apps forever, with a long stream of dreadful first dates.</p>
