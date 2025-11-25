@@ -23,7 +23,7 @@
     foreach($xml->channel->item as $item) {
         list($markdown,$slug) = parse_item ($item);
         print "{$slug}\n";
-        write_markdown( $output_dir, $slug, $markdown, $overwrite=true );
+        write_markdown( $output_dir, $slug, $markdown, $overwrite=false );
     }
 
 
