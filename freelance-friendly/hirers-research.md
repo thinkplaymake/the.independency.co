@@ -14,11 +14,11 @@ Our insight into what helps freelancers work well is used across industries to i
 
 We’re now expanding our research to explore the relationship between freelancers and the organisations that hire them — identifying the biggest challenges, where friction occurs, and the improvements that benefit both sides.
 
-In 2026, we’ll publish a report outlining the key drivers of an effective freelancer–client relationship: the conditions that lead to improved productivity, reduced cost, stronger relationships, higher-quality outcomes, and more sustainable working practices. We’ll also define the “Freelance Friendly” behaviours that create mutual benefit for both hirer and freelancer.
+In 2026, we’ll publish a report outlining the key drivers of an effective freelancer–client relationship: the conditions that lead to improved productivity, reduced cost, stronger relationships, higher-quality outcomes, and more sustainable and supported working practices. We’ll also define the “Freelance Friendly” behaviours that create mutual benefit for both hirer and freelancer.
 
 For the first phase of this research, we are inviting contributions from organisations that work with freelancers and would like to help shape more sustainable industry-wide standards.
 
-<a href="https://calendly.com/theindependencyco/the-independency-freelance-friendly-hirers-interviews" class="cta">&rarr; Take Part </a>
+<a href="https://airtable.com/appmrBuX0HQ2poylW/shrHR4yQLwQqQd0rC" class="cta">&rarr; Take Part </a>
 
 
 ### What’s involved?
@@ -59,6 +59,9 @@ As a thank you for taking part, we’re offering discounted access to either:
 
 * **Poolside** — our community support platform for freelancers, including peer-support, resources, mental health toolkits, discounts and events; or
 
-* **Freelance Feedback programme** — providing qualitative and quantitative insight into your existing freelancer relationships and reputation.
+* **Freelance Feedback** — providing qualitative and quantitative insight into your existing freelancer relationships and reputation.
 
 Discounts will be capped at a maximum value of £1,000.
+
+
+
