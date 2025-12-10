@@ -14,8 +14,8 @@
 
 
 
-    //$rss = fetch_rss( $feed_url );
-    //cache_rss ( $rss, $feed_cache );
+    $rss = fetch_rss( $feed_url );
+    cache_rss ( $rss, $feed_cache );
     $rss = fetch_cache ( $feed_cache );
 
     libxml_use_internal_errors(true);
