@@ -1,0 +1,59 @@
+---
+layout: base 
+toplevelsubnav_url: "/community-coalition/impact-report"
+toplevelsubnav_text: "Community Coalition Impact Report"
+---
+
+{% assign community = site.communities | where: "slug", page.slug | first %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+<style>
+    h1 { font-weight: 100; font-size: 50px; }
+    h1 strong { font-weight: 600; }
+    #sitehead .sitename { margin-bottom: 0px; }
+    .content blockquote { font-family:"Playwrite DE Grund", cursive; font-size: 120%; }
+    .footer { margin-top: 100px; }
+</style>
+<div class="container black" style="background-image: url('/img/interstellar-bg.png'); background-size: cover; background-position: center;">
+    <div class="inner">
+        <h1 style="text-align: center;">
+           <strong>{{community.title}}:</strong> Impact Report 2025
+        </h1>
+        <p style="max-width: 600px; margin: 0 auto; margin-bottom: 100px; text-align: center;">
+
+            <strong>{{ community.description}}</strong><br/><br/>
+
+            We asked each of our members to share their community impact during 2025. <a href="/community-coalition/impact-report">See all reports here.</a></p>
+        
+    </div>
+</div>
+
+<div class="inner content">
+    {{content}}
+</div>
+
+
+<div class="inner learnmore">
+    <h3>Learn more about {{community.title}}</h3>
+    {% if community.has_page %}&rarr; <a href="{{community.url}}">About this community</a><br/>{% endif %}
+    &rarr; <a href="{{community.linkurl}}">{{community.linkurl}}</a>
+</div>
+
+<div class="container black footer" style="background-image: url('/img/interstellar-bg.png'); background-size: cover; background-position: center;">
+    <div class="inner">
+        <h3 style="">
+           Impact Report 2025:
+        </h1>
+        <p>We asked our members to share their community impact during 2025.</p>
+        <p style="max-width: 600px; margin-bottom: 100px;">
+
+            {% for report in site.community-impact-report %}
+            &rarr; <a href="{{report.url}}">{{report.title}}</a><br/>
+            {% endfor %}
+
+        </p>
+    </div>
+</div>
+
+{% include footer.html %}

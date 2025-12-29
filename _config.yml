@@ -8,6 +8,9 @@ collections:
   communities:
     output: true
     permalink: /community-coalition/member/:slug/ 
+  community-impact-report:
+    output: true
+    permalink: /community-coalition/member/:slug/impact-report
   notes:
     output: true
 

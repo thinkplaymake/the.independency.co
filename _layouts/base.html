@@ -21,14 +21,20 @@
     </head>
     <body>
 
-        <div class="container black">
+
+        {% assign subnav_url  = page.toplevelsubnav_url  | default: layout.toplevelsubnav_url %}
+        {% assign subnav_text = page.toplevelsubnav_text | default: layout.toplevelsubnav_text %}
+
+        <div class="container black" id="sitehead">
             <div class="inner">
                 <div class="sitename">
                     <a href="/">The Independency Co.</a>
                 
-                    {% if page.toplevelsubnav_url %}
-                        <a href="{{page.toplevelsubnav_url}}" style="font-weight: 100">{{page.toplevelsubnav_text}}</a>
+                    {% if subnav_url %}
+                        <a href="{{ subnav_url }}" style="font-weight: 100">{{ subnav_text }}</a>
                     {% endif %}
+
+
 
                 </div>
             </div>

@@ -1,0 +1,31 @@
+---
+layout: base
+toplevelsubnav_url: "/community-coalition"
+toplevelsubnav_text: "Community Coalition"
+---
+
+<style>
+    h1 { font-weight: 100;}
+    h1 strong { font-weight: 600; }
+</style>
+<div class="container black footer" style="background-image: url('/img/interstellar-bg.png'); background-size: cover; background-position: center; padding-bottom: 500px">
+    <div class="inner">
+        <h1 style="">
+           <strong>Community Coalition</strong> Impact Report 2025
+        </h1>
+       
+        <div style="max-width: 700px">
+            <p><strong>Freelancer-focused communities provide invaluable support and infrastructure to the self-employed</strong></p>
+            <p>Part of our mission as a <a href="/community-coalition">Community Coalition</a> is to surface the important work being done.</p>
+            <p>We asked our members to share their community impact during 2025.</p>
+            <p style="max-width: 600px; margin-bottom: 100px;">
+
+                {% for report in site.community-impact-report %}
+                &rarr; <a href="{{report.url}}">{{report.title}}</a><br/>
+                {% endfor %}
+
+            </p>
+        </div>
+    </div>
+</div>
+{% include footer.html type="default" %}
