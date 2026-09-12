@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="description" content="1:1 strategic coaching for people working independently, from Matthew Knight.">
+<title>Coaching — Matthew Knight</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+<style>
+    /* CSS Reset */
+    *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        font-size: 16px;
+        -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    img, picture, video, canvas, svg {
+        display: block;
+        max-width: 100%;
+    }
+
+    p, h1, h2, h3, h4, h5, h6 {
+        overflow-wrap: break-word;
+    }
+
+    /* Base template styles, matching the.independency.co */
+    body { margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 22px; }
+    p { margin: 0; margin-bottom: 20px; }
+    .container { width: 100%; padding: 30px; }
+    .container.black { background-color: #000; color: #fff; }
+    .container.beige { background-color: #f1eee3; color: #000; }
+    .inner { width: 100%; max-width: 1100px; margin: 0 auto; }
+
+    h1 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(32px, 10vw, 126px); font-weight: 600; line-height: 0.9; margin-bottom: 50px; }
+    h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(32px, 10vw, 72px); font-weight: 600; line-height: 0.9; margin-top: 50px; margin-bottom: 50px; }
+    h3 { font-family: 'Space Grotesk', sans-serif; font-size: 32px; font-weight: 600; line-height: 0.9; margin-top: 50px; margin-bottom: 30px; }
+
+    a { color: inherit; }
+    a.button { background: black; color: white; padding: 10px 50px; border-radius: 30px; text-decoration: none; font-weight: 600; text-decoration: underline; display: inline-block; margin-bottom: 30px; }
+    .black a.button { background: white; color: black; }
+    .white a.button, .beige a.button { background: black; color: white; }
+    .smallprint { font-size: 18px; }
+    .sitename { text-transform: uppercase; font-size: 18px; font-weight: 600; margin-bottom: 100px; }
+    .sitename a { text-decoration: none; }
+
+    .content p { max-width: 600px; }
+    h1 + p { font-size: 150%; }
+
+    @media screen and (min-width: 768px) {
+        .cols5050 { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; }
+        .cols7030 { display: grid; grid-template-columns: auto 600px; gap: 100px; }
+    }
+
+    .col-left { width: 100%; max-width: 600px; padding-bottom: 50px; }
+    .col-right { width: 100%; max-width: 600px; margin-left: auto; }
+
+    /* Offer-specific additions */
+    .offer-price {
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .offer-steps {
+        list-style: none;
+        margin-bottom: 20px;
+        max-width: 600px;
+    }
+
+    .offer-steps li {
+        font-size: 20px;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(0,0,0,0.15);
+    }
+
+    .black .offer-steps li {
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .offer-steps li:last-child {
+        border-bottom: none;
+    }
+
+    .offer-block {
+        margin-bottom: 70px;
+    }
+
+    .offer-block:last-child {
+        margin-bottom: 0;
+    }
+
+    .who-list {
+        list-style: none;
+        max-width: 600px;
+        margin-bottom: 30px;
+    }
+
+    .who-list li {
+        font-size: 22px;
+        padding: 10px 0 10px 26px;
+        position: relative;
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+    }
+
+    .who-list li:last-child { border-bottom: none; }
+
+    .who-list li::before {
+        content: "—";
+        position: absolute;
+        left: 0;
+    }
+</style>
+</head>
+<body>
+
+<div class="container black" id="sitehead">
+    <div class="inner">
+        <div class="sitename">
+            <a href="#">Matthew Knight — Coaching</a>
+        </div>
+    </div>
+</div>
+
+<div class="container black hero">
+    <div class="inner">
+        <style>
+            h1 { font-weight: 100; font-size: clamp(40px, 10vw, 90px); margin-bottom: 100px; }
+            h1 strong { font-weight: 600; display: block; }
+            h2 { font-size: clamp(24px, 10vw, 48px); font-weight: 600; line-height: 0.9; margin-top: 50px; margin-bottom: 50px; }
+        </style>
+        <h1>
+            <strong>Strategic coaching</strong> for people working independently.</h1>
+        <p style="max-width: 700px; font-size: 150%;">
+            Working for yourself can be liberating, whilst also challenging and isolating.<br/>Buddy up, with someone who gets it.
+        </p>
+        
+    </div>
+</div>
+
+<div class="container white">
+    <div class="inner">
+
+        <style>
+            .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; }
+            @media screen and (max-width: 768px) {
+                .cols { grid-template-columns: 1fr; gap: 50px; }
+            }
+        </style>
+        <div class="cols">
+            <div class="col">
+                <h2>Why strategic coaching?</h2>
+                <p>
+                    Having someone to work through challenges together is incredibly important. Having someone who understands how independent work works, matters even more.
+                </p>
+                <p>
+                    That's why I work 1:1 with people looking for an outside perspective, from someone on the inside.
+                </p>
+        
+                <p>I regularly work with </p>
+                <ul class="who-list">
+                    <li>Strategy professionals, making sense of the industry and their future career</li>
+                    <li>Creative industry professionals looking to take the step into self-employment</li>
+                    <li>Established independents looking towards the next chapter of their offering</li>
+                </ul>
+            </div>
+            
+            <div class="col">
+                <h2>A little about me</h2>
+                <div class="content">
+                    <p>I've worked independently for 30+ years, and ten plus years as a strategist. I've led teams, built and sold businesses, and spent the last decade supporting fellow freelancers and self-starters.</p>
+                    <p>I've worked with brands like LEGO, Google, Accenture, adidas, Innocent, NABS and the Film &amp; TV Charity. And I run a number of community projects focused on independent work, such as Leapers and Outside Perspective, I've supported over 250,000 freelancers through this work.</p>
+                    <p>Most of my work is given away for free via resources, calls, webinars, workshops and community - but sometimes, a 1:1 format is a better fit for specific challenges and questions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container beige" id="offers">
+    <div class="inner">
+        <h2>Ways of working together</h2>
+
+        <div class="cols">
+            <div class="offer-block col">
+                <h3>Power Hour</h3>
+                <span class="offer-price">£175</span>
+                <div class="content">
+                    <p>One focused session for a specific challenge around independent work.</p>
+                    <p>Thinking about going solo or building something new, perhaps a return to employment, a hurdle you're facing, a question about positioning yourself or building a network?</p>
+                    <p>Leave with clarity, not homework.</p>
+                    <p>One hour on Google Meet, plus a summary sheet after the call.</p>
+                </div>
+                <a href="https://calendly.com/theindependencyco/powerhour" class="button">Schedule your call</a>
+                <p style="font-size: smaller">(Your session will be confirmed once your payment and pre-call information has been received).</p>
+            </div>
+
+            <div class="offer-bloc colk">
+                <h3>Journey</h3>
+                <span class="offer-price">£650</span>
+                <div class="content">
+                    <p>A series of sessions over four weeks, pointed at a specific problem you're working through.</p>
+                </div>
+                <ol class="offer-steps">
+                    <li>1. Diagnose the challenge</li>
+                    <li>2. Set the direction</li>
+                    <li>3. Identify the actions</li>
+                    <li>4. Accelerate the progress</li>
+                </ol>
+                <div class="content">
+                    <p>Four one-hour sessions on Google Meet, plus Slack support between calls.</p>
+                </div>
+                <a href="https://calendly.com/theindependencyco/coaching-chemistry" class="button">Schedule a chemistry call</a>
+            </div>
+        </div>
+
+        <div class="offer-block">
+            <h3>Not sure if it's right for you?</h3>
+            <div class="content">
+                <p>If there's another way of working together you have in mind, i.e. over a longer period of time, or working on a more complex challenge, I also work with individuals and organisations in a more bespoke way.</p>
+                <p>Get in touch to discuss your goals and we'll see if might be a good fit to work together.</p>
+            </div>
+            <a href="#" class="button">Get in touch to discuss</a>
+        </div>
+    </div>
+</div>
+
+<div class="container black">
+    <div class="inner">
+        
+        <div style="font-size: 12px; margin-top: 30px;">
+            Matthew Knight operates as Foxlark Strategy Limited.<br />
+            a registered company in england and wales.
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
