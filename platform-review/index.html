@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="description" content="Freelance Platform Strategic Review: an honest outside look at your freelancer product, from Matthew Knight.">
+<title>Freelance Platform Strategic Review | Matthew Knight</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+<style>
+    /* CSS Reset */
+    *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        font-size: 16px;
+        -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    img, picture, video, canvas, svg {
+        display: block;
+        max-width: 100%;
+    }
+
+    p, h1, h2, h3, h4, h5, h6 {
+        overflow-wrap: break-word;
+    }
+
+    /* Base template styles, matching the.independency.co */
+    body { margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 22px; }
+    p { margin: 0; margin-bottom: 20px; }
+    .container { width: 100%; padding: 30px; }
+    .container.black { background-color: #000; color: #fff; }
+    .container.beige { background-color: #f1eee3; color: #000; }
+    .inner { width: 100%; max-width: 1100px; margin: 0 auto; }
+
+    h1 { font-family: 'Space Grotesk', sans-serif; font-weight: 100; font-size: clamp(40px, 10vw, 90px); line-height: 0.9; margin-bottom: 100px; }
+    h1 strong { font-weight: 600; display: block; }
+    h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(24px, 10vw, 48px); font-weight: 600; line-height: 0.9; margin-top: 50px; margin-bottom: 50px; }
+    h3 { font-family: 'Space Grotesk', sans-serif; font-size: 32px; font-weight: 600; line-height: 0.9; margin-top: 50px; margin-bottom: 30px; }
+
+    a { color: inherit; }
+    a.button { background: black; color: white; padding: 10px 50px; border-radius: 30px; font-weight: 600; text-decoration: underline; display: inline-block; margin-bottom: 30px; }
+    .black a.button { background: white; color: black; }
+    .white a.button, .beige a.button { background: black; color: white; }
+    .sitename { text-transform: uppercase; font-size: 18px; font-weight: 600; margin-bottom: 100px; }
+    .sitename a { text-decoration: none; }
+
+    .content p { max-width: 600px; }
+
+    .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; }
+    @media screen and (max-width: 768px) {
+        .cols { grid-template-columns: 1fr; gap: 50px; }
+    }
+
+    /* Offer-specific additions */
+    .offer-price {
+        font-family: 'Space Grotesk', sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .offer-steps {
+        list-style: none;
+        margin-bottom: 20px;
+        max-width: 600px;
+    }
+
+    .offer-steps li {
+        font-size: 20px;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(0,0,0,0.15);
+    }
+
+    .offer-steps li:last-child { border-bottom: none; }
+
+    .offer-block { margin-bottom: 70px; }
+    .offer-block:last-child { margin-bottom: 0; }
+
+    .who-list {
+        list-style: none;
+        max-width: 600px;
+        margin-bottom: 30px;
+    }
+
+    .who-list li {
+        font-size: 22px;
+        padding: 10px 0 10px 26px;
+        position: relative;
+        border-bottom: 1px solid rgba(0,0,0,0.15);
+    }
+
+    .who-list li:last-child { border-bottom: none; }
+
+    .who-list li::before {
+        content: "—";
+        position: absolute;
+        left: 0;
+    }
+
+    .who-list li strong { display: block; }
+    .logo-block { border-top: 1px solid rgba(0,0,0,0.2); border-bottom: 1px solid rgba(0,0,0,0.2); padding: 40px 0 50px; text-align: center; }
+    .logo-block h3 { font-size: 20px; margin-top: 0; margin-bottom: 40px; }
+    .logos { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 40px 60px; }
+    .logos img { height: 40px; width: auto; max-width: 200px; object-fit: contain; }
+    .timeline { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; position: relative; margin: 0 0 20px; }
+    .timeline::before { content: ""; position: absolute; top: 9px; left: 16.66%; right: 16.66%; height: 2px; background: #000; }
+    .timeline li { position: relative; text-align: center; font-size: 20px; padding-top: 40px; }
+    .timeline li::before { content: ""; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 20px; height: 20px; border-radius: 50%; background: #000; }
+    .timeline .step { display: block; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 16px; text-transform: uppercase; margin-bottom: 8px; }
+    @media screen and (max-width: 768px) {
+        .timeline { grid-template-columns: 1fr; gap: 30px; }
+        .timeline::before { top: 10px; bottom: 10px; left: 9px; right: auto; width: 2px; height: auto; }
+        .timeline li { text-align: left; padding-top: 0; padding-left: 40px; }
+        .timeline li::before { left: 0; transform: none; }
+    }
+</style>
+</head>
+<body>
+
+<div class="container black" id="sitehead">
+    <div class="inner">
+        <div class="sitename">
+            <a href="#">Matthew Knight · Freelance Platform Strategic Review</a>
+        </div>
+    </div>
+</div>
+
+<div class="container black hero">
+    <div class="inner">
+        <h1><strong>Freelance Platform Strategic Review.</strong> Informed feedback on products for freelancers.</h1>
+        <p style="max-width: 700px; font-size: 150%;">
+            You're building something for freelancers.<br/>Before you go further, find out how it lands with the people you're building for.
+        </p>
+    </div>
+</div>
+
+<div class="container beige">
+    <div class="inner">
+        <div class="cols">
+            <div class="col">
+                <h2>What you get</h2>
+                <div class="content">
+                    <p>A structured written review covering three areas:</p>
+                </div>
+                <ul class="who-list">
+                    <li><strong>Positioning</strong> Is it clear who it's for, what it does and why it matters? Does it sound like it understands freelancers, or like it's guessing?</li>
+                    <li><strong>Product</strong> What works, what's confusing, and what's missing. Onboarding, core flows, tone, and the gaps freelancers will notice straight away.</li>
+                    <li><strong>Pricing</strong> Does the model fit how freelancers actually earn, spend and decide? Where's the friction, and what would make it an easier yes?</li>
+                </ul>
+                <div class="content">
+                    <p>We'll provide a clear point of view, along with pointed recommendations to help your product land with the audience you're looking for.</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <h2>Why me</h2>
+                <ul class="who-list">
+                    <li><strong>A working freelancer for 30+ years.</strong> I'm your user, not just someone who studies them.</li>
+                    <li><strong>A recognised voice and advocate for freelancers.</strong> My work is used by policymakers, communities and employers, and featured in the press.</li>
+                    <li><strong>Ten years running award-winning freelancing community projects.</strong></li>
+                    <li><strong>Supported 250,000 freelancers</strong> through communities, research and resources.</li>
+                    <li><strong>Strategy advisor to brands like Google, LEGO, innocent and Klarna.</strong></li>
+                    <li><strong>Deep product design experience</strong> including Manual of Me and Freelancing.Support.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container beige" id="logos">
+    <div class="inner logo-block">
+        <h3>Brands we've advised, supported, and collaborated with</h3>
+        <div class="logos">
+            <img src="logos/freeagent.svg" alt="FreeAgent">
+            <img src="logos/monzo.svg" alt="Monzo">
+            <img src="logos/with-jack.png" alt="With Jack">
+            <img src="logos/hmrc.png" alt="HM Revenue &amp; Customs">
+            <img src="logos/osbc.png" alt="Office of the Small Business Commissioner">
+            <img src="logos/nabs.png" alt="NABS">
+            <img src="logos/mind.png" alt="Mind">
+            <img src="logos/film-tv-charity.png" alt="Film + TV Charity">
+            <img src="logos/doing-it-for-the-kids.png" alt="Doing It For The Kids">
+            <img src="logos/eric.png" alt="ERIC">
+        </div>
+    </div>
+</div>
+
+<div class="container white" id="offers">
+    <div class="inner">
+        <div class="offer-block">
+            <h2 style="text-align: center;">How it works</h2>
+            <ol class="timeline">
+                <li><span class="step">Step 1</span>Host a product introduction demo for us via a call.</li>
+                <li><span class="step">Step 2</span>We spend time with your platform, using it as a freelancer would.</li>
+                <li><span class="step">Step 3</span>Within one week, we'll provide you with structured feedback.</li>
+            </ol>
+        </div>
+
+        <div class="cols">
+            <div class="offer-block col">
+                <h2>Price</h2>
+                <span class="offer-price">£950 + VAT</span>
+                <div class="content">
+                    <p>Fixed. No scope creep.</p>
+                </div>
+                <a href="mailto:hello@independency.co?subject=Freelance%20Platform%20Strategic%20Review" class="button">Book a review</a>
+                <p style="font-size: smaller">£250 + VAT to confirm and proceed. The remaining amount is invoiced and due on delivery.</p>
+            </div>
+
+            <div class="offer-block col">
+                <h3>Want more than a one-off?</h3>
+                <div class="content">
+                    <p>I also work with businesses as an ongoing, fractional advisor.</p>
+                    <p>If you want someone in your corner on strategy, product and freelancer audiences month to month, the review is a good place to start.</p>
+                </div>
+                <a href="mailto:hello@independency.co?subject=Ongoing%20advisory%20support" class="button">Talk about ongoing support</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container black">
+    <div class="inner">
+        <div style="font-size: 12px; margin-top: 30px;">
+            Matthew Knight operates as Foxlark Strategy Limited.<br />
+            a registered company in england and wales.
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
