@@ -47,10 +47,12 @@
 
     .content p { max-width: 600px; }
 
-    .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; }
+    .cols, .fullwidth:not(.resource) { display: grid; grid-template-columns: 1fr 1fr; gap: 100px; }
     @media screen and (max-width: 768px) {
-        .cols { grid-template-columns: 1fr; gap: 50px; }
+        .cols, .fullwidth:not(.resource) { grid-template-columns: 1fr; gap: 50px; }
     }
+    .resource.fullwidth,
+    .resources .fullwidth { grid-column: 1 / -1; }
 
     /* Page-specific additions */
     .event-meta { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 18px; text-transform: uppercase; margin-bottom: 30px; }
@@ -84,7 +86,7 @@
         <h1><strong>Freelancers,<br/>without the friction.</strong></h1>
         <div class="event-meta">Inside Out · Canva HQ, London · 20 November 2026</div>
         <div class="content">
-            <p>Thanks for joining us. Everything from the session is here: the slides, the framework, and the tools to put it into practice.</p>
+            <p>Thanks for joining us!<br/><br/> Everything from the session is here: the slides, the framework, and the tools to put it into practice.</p>
             <p>The workshop was run by Matthew Knight of <a href="/">The Independency Co.</a> and Chris Martin of <a href="https://www.yunojuno.com">YunoJuno</a>.</p>
         </div>
     </div>
@@ -95,11 +97,11 @@
         <h2>Resources</h2>
         <div class="resources">
 
-            <div class="resource">
+            <div class="resource fullwidth">
                 <span class="type">PDF</span>
                 <h3>Inside Out LIVE: Workshop slides</h3>
                 <p>The full deck from the session, to share with your team.</p>
-                <a href="/inside-out/the-independency-co-inside-out-slides.pdf" class="button" target="_blank">Download the slides</a>
+                <a href="/inside-out/workshop-slides.pdf" class="button" target="_blank">Download the slides</a>
             </div>
 
             <div class="resource">
@@ -108,6 +110,15 @@
                 <p>7 prompts to explore how you're working with freelancers: Purpose, Process, Platform, Ways of Working, Relationship, Reputation and ROI.</p>
                 <a href="/inside-out/independency-co-working-with-freelancers.pdf" class="button" target="_blank">Download the questions</a>
             </div>
+
+            <div class="resource">
+                <span class="type">Guide</span>
+                <h3>Permanent vs Freelance</h3>
+                <p>8 Critical Hiring Differences for In-House Creative Leads.</p>
+                <a href="/inside-out/yunojuno-hiring.pdf" class="button" target="_blank">Read the guide</a>
+            </div>
+
+            
 
             <div class="resource">
                 <span class="type">Guide</span>
@@ -124,6 +135,8 @@
                 <a href="/inside-out/workwellwithus.pdf" class="button" target="_blank">Read the guide</a>
                 <a href="https://www.workwellwith.us" class="more" target="_blank">Visit WorkWellWith.Us &rarr;</a>
             </div>
+
+          
 
         </div>
     </div>
@@ -155,15 +168,25 @@
                     </div>
                     <br/><br/>
                     <p>We'd love to support your organisation to build stronger relationships with your freelancers.</p>
-                    <a href="mailto:matthew@independency.co?subject=Inside%20Out%20workshop" class="button">Work with us</a>
+                    <a href="mailto:matthew@independency.co?subject=Inside%20Out%20workshop" class="button">Email Matthew</a>
                 </div>
             </div>
 
             <div class="col">
                 <h2><br/>YunoJuno</h2>
                 <div class="content">
-                    <p><a href="https://www.yunojuno.com">YunoJuno</a> is a freelance management platform that helps organisations find, book, manage and pay freelancers.</p>
-
+                    <p><strong>Freelancers at pace, within your governance.</strong></p>
+                    <p>Creative and marketing teams in large organisations often need freelancers fast, but have to work inside governance designed for the wider business. That usually means strict IR35 rules, mandated enterprise software for engaging temporary labour, a contingent workforce programme to work within, payment terms that are unfair on freelancers, and long timelines to engage talent, even people the organisation already knows and trusts.</p>
+                    <p>YunoJuno is a freelance management platform built to close that gap. We help in-house teams engage the freelancers they need, quickly, while procurement, HR, legal and finance keep the controls they require.</p>
+                    <div class="projects">
+                        <div class="project"><strong>IR35 handled:</strong> status determinations built into the booking process, with clear, documented decisions.</div>
+                        <div class="project"><strong>Works with your systems:</strong> integrates with enterprise platforms such as SAP Fieldglass and Beeline and operates within MSP-led contingent workforce programmes, keeping freelance spend visible.</div>
+                        <div class="project"><strong>Fair pay for freelancers:</strong> freelancers are paid promptly by YunoJuno, rather than waiting on long corporate payment terms.</div>
+                        <div class="project"><strong>Known talent in under an hour:</strong> onboard the freelancers you already work with, with compliance checks such as Right to Work handled for you.</div>
+                        <div class="project"><strong>New talent when you need it:</strong> access to 150,000+ vetted freelancers across creative and marketing disciplines.</div>
+                    </div>
+                    <br/><br/>
+                    <a href="mailto:chris.martin@yunojuno.com?subject=Inside%20Out%20workshop" class="button">Email Chris </a>
                 </div>
             </div>
         </div>
